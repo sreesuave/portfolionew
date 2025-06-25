@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .fa {
+      padding: 15px;
+      font-size: 24px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px;
+      border-radius: 50%;
+      color: white;
+    }
+    .fa-instagram { background: #C13584; }
+    .fa-whatsapp  { background: #25D366; }
+    .fa-linkedin  { background: #0077B5; }
+    .fa:hover     { opacity: 0.8; }
+  </style>
+</head>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email, phone, or social media.</p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <strong>Email:</strong> <a href="mailto:you@example.com">sridharchillarigi@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <strong>Phone:</strong> <a href="tel:+1234567890">+917995821465</a>
+      </div>
+      <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75789.78454749724!2d81.97561460424419!3d16.571480977981775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37ef83f9204c7d%3A0x5f9453f5c41b161e!2sAmalapuram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1750789312046!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    </div>
+
+    <form action="/send-message" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+   <div class="social-links" style="text-align:center; margin-top:20px;">
+      <a href="https://www.instagram.com/YOUR_USERNAME" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://wa.me/917995821465" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.linkedin.com/in/sridhar-chillarigi-843765289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a>
+      </div>
+</section>

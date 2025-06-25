@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk - Topics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            color: #FFD700;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a.active {
+            color: #00abf0;
+        }
+
+        section.talk {
+            margin: 50px 20px;
+            text-align: center;
+        }
+
+        .topics h2 {
+            font-size: 32px;
+            color: #00abf0;
+            margin-bottom: 20px;
+        }
+
+        .topics ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .topics li {
+            font-size: 20px;
+            padding: 15px 20px;
+            background-color: #333;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topics li:hover {
+            background-color: #00abf0;
+        }
+
+        .topics li i {
+            font-size: 24px;
+        }
+
+        .logo-container {
+            display: none;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .logo-container img {
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            width: 200px;
+            margin: 40px auto;
+            background-color: #FFD700; /* Yellow */
+            padding: 10px;
+            color: #081b29;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #081b29; 
+            color: #FFD700; /* Yellow */
+
+        }
+        .topics li a {
+    color: #FFD700; /* Yellow text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topics li:hover a {
+    color: #081b29; /* Dark on hover to contrast with the blue background */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Sridhar.</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Hire Me</a>
+            <a href="talk.html" class="active">Let's Talk</a>
+        </nav>
+    </header>
+
+    <section class="talk">
+        <div class="topics">
+            <h2>Topics I'm Interested to Talk About</h2>
+           <ul>
+      <li id="webTech">
+        <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">
+          <i class="bx bxl-html5"></i> Web Technology
+        </a>
+      </li>
+      <li id="filmMaking">
+        <a href="https://www.crunchyroll.com/" target="_blank">
+          <i class="bx bx-film"></i> Anime
+        </a>
+      </li>
+      <li id="crypto">
+        <a href="https://www.coindesk.com/" target="_blank">
+          <i class="bx bx-bitcoin"></i> Cryptos
+        </a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="logo-container" id="logoContainer">
+            <img id="logo" src="" alt="Logo">
+        </div>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-button">Back to Home</a>
+    </section>
+
+    <script>
+        function showLogo(topic) {
+            var logoContainer = document.getElementById("logoContainer");
+            var logo = document.getElementById("logo");
+
+            // Display the logo container
+            logoContainer.style.display = "block";
+
+            // Set the logo based on the selected topic
+            if (topic === "web") {
+                logo.src = "https://upload.wikimedia.org/wikipedia/commons/0/05/HTML5_logo_and_wordmark.svg"; // Web Technology logo
+            } else if (topic === "film") {
+                logo.src = "https://upload.wikimedia.org/wikipedia/commons/a/af/Film_reel_icon.svg"; // Film Making logo
+            } else if (topic === "cricket") {
+                logo.src = "https://upload.wikimedia.org/wikipedia/commons/4/48/Cricket_logo.svg"; // Cricket logo
+            }
+        }
+    </script>
+</body>
+</html>

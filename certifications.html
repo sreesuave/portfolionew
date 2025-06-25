@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <style>
+        /* CSS Start */
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #081b29;
+            color: #ededed;
+            text-align: center;
+            padding: 50px 20px;
+            overflow-y: auto;
+            height: 100vh; /* Ensure scrollability */
+        }
+
+        .header {
+            background-color: transparent;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #00abf0;
+        }
+
+        .certifications-content {
+            margin-top: 50px;
+            animation: fadeIn 2s ease-out;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            color: yellow;
+        }
+
+        .certificates {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+            opacity: 0;
+            animation: popIn 1.5s ease-out forwards;
+        }
+
+        .certificate-card {
+            background: #00abf0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 500px;
+            opacity: 0;
+            animation: fadeInCard 1.5s ease-out forwards;
+        }
+
+        .certificate-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .certificate-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .certificate-card p {
+            font-size: 16px;
+        }
+
+        .back-home {
+            margin-top: 30px;
+            display: inline-block;
+            font-size: 20px;
+            color: yellow;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid yellow;
+            border-radius: 5px;
+        }
+
+        .back-home:hover {
+            background-color: yellow;
+            color: #081b29;
+        }
+
+        /* Keyframes for Animations */
+
+        /* Explosion effect */
+        @keyframes explosion {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            40% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Fade-in animation for certifications content */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Pop-in effect for certificates container */
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Fade-in effect for individual certificate cards */
+        @keyframes fadeInCard {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS End */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">sridhar.</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="certifications.html" class="active">Certifications</a>
+            <a href="talk.html">Let's Talk</a>
+        </nav>
+    </header>
+
+    <section class="certifications-content">
+        <h2>My Certifications</h2>
+
+        <div class="certificates">
+            <!-- Front End Development Certificate -->
+            <div class="certificate-card">
+                <img src="frontend.png" alt="Front End Development">
+                <h3>Front End Development</h3>
+                <p>Certified in Front End Development.</p>
+            </div>
+
+            <!-- ServiceNow Certificate -->
+            <div class="certificate-card">
+                <img src="servicenowcsa.png" alt="ServiceNow">
+                <h3>ServiceNow</h3>
+                <p>Certified in ServiceNow platform.</p>
+            </div>
+
+            <!-- Salesforce Developer Certificate -->
+            <div class="certificate-card">
+                <img src="salesforce.png" alt="Salesforce Developer">
+                <h3>Salesforce Developer</h3>
+                <p>Certified Salesforce Developer.</p>
+            </div>
+
+           
+
+            <!-- Java Programming Certificate -->
+            <div class="certificate-card">
+                <img src="javacode.png" alt="Java Programming">
+                <h3>codetantra- Java Programming</h3>
+                <p>Certified Java Programmer by codetantra .</p>
+            </div>
+
+            <!-- Cisco CCNA Certificate -->
+            <div class="certificate-card">
+                <img src="ccna.png" alt="Cisco CCNA">
+                <h3>Cisco CCNA</h3>
+                <p>Certified Cisco Network Associate (CCNA).</p>
+            </div>
+            <div class="certificate-card">
+                <img src="cloud.jpg" alt="ServiceNow">
+                <h3>cloud computing </h3>
+                <p>Certified in cloud computing from NPTEL.</p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-home">Back to Home</a>
+    </section>
+
+    <script>
+        window.onload = function () {
+            // Trigger the explosion effect when the page loads
+            document.querySelector('.certifications-content').style.animation = 'explosion 1.5s ease-out';
+        };
+    </script>
+
+</body>
+
+</html>
